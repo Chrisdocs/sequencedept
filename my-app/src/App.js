@@ -27,7 +27,7 @@ function App() {
       </Parallax>
       <Parallax bgImage={worldMap} strength={800}>
       <div className="div2">
-
+      <Projects></Projects>
       </div>
       </Parallax>
     </div>

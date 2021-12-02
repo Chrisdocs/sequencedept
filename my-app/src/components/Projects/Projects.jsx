@@ -1,10 +1,13 @@
 import React from 'react';
+import "./styles.css";
+import Cards from '../Card/Card';
 
 function Projects() {
+
     return (
-        <div>
+        <div id="cardSection">
             <section>
-                <h1>Projects</h1>
+                <Cards></Cards>
             </section>
         </div>
     );
