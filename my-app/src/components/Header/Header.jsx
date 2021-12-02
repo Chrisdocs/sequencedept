@@ -1,11 +1,12 @@
 import React from 'react';
+import './header.css';
 
 function Header() {
-    
+
     return (
         <div>
             <section>
-                <h1>Header</h1>
+                <img className="banner" src={require('../../assets/images/SQDPTbannerSM.png').default} />
             </section>
         </div>
     );
