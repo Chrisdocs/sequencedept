@@ -5,3 +5,15 @@ input {
     height: 10em;
     width: 600px;
   }
+
+  div[role='alert'] {
+    color: red;
+    margin-top: 1em;
+  }
+
+  .message-chars {
+    width: 600px;
+    margin: auto 0;
+    text-align: left;
+    font-size: smaller;
+  }
