@@ -3,10 +3,10 @@ import { Parallax, Background } from 'react-parallax';
 import './App.css';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-import About from './components/About/About';
-import Contact from './components/Contact/Contact';
+import About from './pages/About/About';
+import Contact from './pages/Contact/Contact';
 import Navigation from './components/Navigation/Nav';
-import Projects from './components/Projects/Projects';
+import Projects from './pages/Projects/Projects';
 import worldMap from './assets/images/Old-world-map.jpeg'
 import forest from './assets/images/ForestBG1.png';
 import woods from './assets/images/woods.png';
@@ -29,6 +29,16 @@ function App() {
       <div className="div2">
       <Projects></Projects>
       </div>
+      </Parallax>
+      <Parallax>
+        <div>
+          <About></About>
+        </div>
+      </Parallax>
+      <Parallax>
+        <div>
+          <Contact></Contact>
+        </div>
       </Parallax>
     </div>
   );

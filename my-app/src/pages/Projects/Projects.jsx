@@ -1,6 +1,6 @@
 import React from 'react';
 import "./styles.css";
-import Cards from '../Card/Card';
+import Cards from '../../components/Card/Card';
 
 function Projects() {
 
