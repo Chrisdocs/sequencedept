@@ -20,6 +20,7 @@ function App() {
   return (
     <div className="App">
       <Parallax bgImage={forest} strength={500}>
+      <Navigation></Navigation>
         <div className="image1">
           <div className="box">
             <img className="logo" src={sqdptLogo} />
