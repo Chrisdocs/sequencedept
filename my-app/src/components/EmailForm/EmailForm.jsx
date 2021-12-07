@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./styles.css";
 import { useForm } from 'react-hook-form';
 import { init, sendForm } from 'emailjs-com'
-init('user_h5i4jKcOz7z58xA2biMrJ')
+init('user_gI3ZavgnRDiZw3W8xBTdX')
 
 
 function EmailForm() {
@@ -12,7 +12,7 @@ function EmailForm() {
         console.log(values);
         generateContactNum();
         
-        sendForm('default_service', 'template_bk8oh9j', '#contact-form')
+        sendForm('default_service', 'template_uppgqdq', '#contact-form')
         .then(function(response) {
             console.log('Success!', response.status, response.text);
         }, function(error) {
@@ -28,12 +28,13 @@ function EmailForm() {
         }
 
     const message = watch('message') || "";
-    const messageCharactersWatch = 250 - message.length;
+    const messageCharactersWatch = 500 - message.length;
 
 
     return(
         <div className="contact">
-            <h1>Contact</h1>
+            <h1 className="contact-title">Contact</h1>
+
             <form id='contact-form' onSubmit={handleSubmit(onSubmit)}>
 
             <input type='hidden' name='contact_number' value={contactNumber} />
@@ -41,7 +42,8 @@ function EmailForm() {
                 {errors.username && errors.username.type === "required" && (
                     <div role="alert">Name is required<br/></div>
                 )}
-                <input 
+                <input
+                    className="input-style" 
                     placeholder="Name"
                     aria-invalid={errors.username ? "true" : "false"}
                     {...register('username', {
@@ -53,7 +55,8 @@ function EmailForm() {
                 {errors.email && errors.email.type === "required" && (
                     <div role="alert">Email is required<br/></div>
                 )}
-                <input 
+                <input
+                className="input-style" 
                 type='email'
                 placeholder='Email'
                 {...register('email', {
@@ -68,17 +71,23 @@ function EmailForm() {
                 {errors.message && errors.message.type === "required" && (
                     <div role="alert">A message is required<br/></div>
                 )}
-                <textarea 
+                <textarea
+                className="text-area-style"  
                 name='message'
                 placeholder='Message'
-                maxLength='250'
+                maxLength='500'
                 {...register('message', {
                     required: true 
                 })} 
                 />
                 <p className="message-chars">{messageCharactersWatch} characters left</p>
                 <br/>
-                <button type='submit'>Submit</button>
+                <div className="submit-div">
+                    <button
+                        className="submit-button"
+                        type='submit'
+                    >Send</button>
+                </div>
             </form>
         </div>
     );

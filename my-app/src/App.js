@@ -11,6 +11,7 @@ import worldMap from './assets/images/Old-world-map.jpeg'
 import forest from './assets/images/ForestBG1.png';
 import woods from './assets/images/woods.png';
 import sqdptLogo from './assets/images/logo.png';
+import savMap from './assets/images/savanahmap.png';
 
 
 
@@ -30,13 +31,13 @@ function App() {
       <Projects></Projects>
       </div>
       </Parallax>
-      <Parallax>
+      <Parallax bgImage={woods} strength={500}>
         <div>
           <About></About>
         </div>
       </Parallax>
-      <Parallax>
-        <div>
+      <Parallax bgImage={savMap} strength={500}>
+        <div className="contact-box">
           <Contact></Contact>
         </div>
       </Parallax>

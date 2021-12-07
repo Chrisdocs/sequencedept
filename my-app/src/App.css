@@ -19,6 +19,10 @@
   background-color: transparent;
 }
 
+.contact-box {
+  height: 100%;
+}
+
 @media screen and (max-width: 1440px) {
   .image1{
     height: 900px;
