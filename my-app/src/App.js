@@ -19,29 +19,42 @@ function App() {
 
   return (
     <div className="App">
-      <Parallax bgImage={forest} strength={500}>
       <Navigation></Navigation>
-        <div className="image1">
-          <div className="box">
-            <img className="logo" src={sqdptLogo} />
+
+      <section id="header">
+        <Parallax bgImage={forest} strength={500}>
+          <div className="image1">
+            <div className="box">
+              <img className="logo" src={sqdptLogo} />
+            </div>
           </div>
+        </Parallax>
+      </section>
+
+      <section id="project-page">
+        <Parallax bgImage={worldMap} strength={800}>
+        <div className="div2">
+        <Projects></Projects>
         </div>
-      </Parallax>
-      <Parallax bgImage={worldMap} strength={800}>
-      <div className="div2">
-      <Projects></Projects>
-      </div>
-      </Parallax>
-      <Parallax bgImage={woods} strength={500}>
-        <div>
-          <About></About>
-        </div>
-      </Parallax>
-      <Parallax bgImage={savMap} strength={500}>
-        <div className="contact-box">
-          <Contact></Contact>
-        </div>
-      </Parallax>
+        </Parallax>
+      </section>
+
+      <section id="about-page">
+        <Parallax bgImage={woods} strength={500}>
+          <div>
+            <About></About>
+          </div>
+        </Parallax>
+      </section>
+
+      <section id="contact-page">
+        <Parallax bgImage={savMap} strength={500}>
+          <div className="contact-box">
+            <Contact></Contact>
+          </div>
+        </Parallax>
+      </section>
+
     </div>
   );
 }
