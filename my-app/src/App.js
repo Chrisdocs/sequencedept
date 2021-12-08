@@ -40,7 +40,7 @@ function App() {
       </section>
 
       <section id="about-page">
-        <Parallax bgImage={woods} strength={500}>
+        <Parallax bgImage={forest} strength={500}>
           <div>
             <About></About>
           </div>

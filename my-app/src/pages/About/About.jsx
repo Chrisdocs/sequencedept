@@ -1,12 +1,15 @@
 import React from 'react';
+import "./styles.css";
 
 function About() {
     return (
-        <div>
-            <section>
-                <h1>About</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nesciunt cumque et. Consectetur, eligendi labore voluptas dolores aspernatur atque minima molestiae natus voluptate cumque, nostrum, est dicta similique nisi ipsa?</p>
-            </section>
+        <div id="container-div">
+            <div id="about-div">
+                <section id="about-section">
+                    <h1>About</h1>
+                    <p>The Sequence Department serves audiences and clients by taking a holistic approach to producing media. We produce thoughtfully crafted video sequences inspired by nature, art, history, and humor.</p>
+                </section>
+            </div>
         </div>
     );
 }

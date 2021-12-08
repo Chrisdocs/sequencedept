@@ -1,0 +1,20 @@
+#container-div {
+    display: flex;
+    justify-content: center;
+}
+
+#about-div {
+    background-color: white;
+    width: 50%;
+    margin-top: 10em;
+    margin-bottom: 10em;
+    padding: 10px 80px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #293f26;
+}
+
+#about-section {
+
+}
