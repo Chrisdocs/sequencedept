@@ -16,20 +16,22 @@ body {
 }
 
 .div2 {
-  height: 100vh;
+  margin: 2%;
 }
 
 .logo{
   background-color: transparent;
+
 }
 
 .contact-box {
   height: 100%;
 }
 
-#project-page {
-  padding: 50px;
-  margin: 50px;
+@media screen and (max-width: 1600px) {
+  .image1{
+    height: 1000px;
+  }
 }
 
 @media screen and (max-width: 1440px) {

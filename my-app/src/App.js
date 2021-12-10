@@ -32,7 +32,7 @@ function App() {
       </section>
 
       <section id="project-page">
-        <Parallax bgImage={worldMap} strength={800}>
+        <Parallax>
         <div className="div2">
         <Projects></Projects>
         </div>
