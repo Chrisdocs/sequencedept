@@ -21,7 +21,7 @@ function App() {
     <div className="App">
       <Navigation></Navigation>
 
-      <section id="header">
+      <section id="header" style={{height: '100%'}}>
         <Parallax bgImage={forest} strength={500}>
           <div className="image1">
             <div className="box">
@@ -53,6 +53,10 @@ function App() {
             <Contact></Contact>
           </div>
         </Parallax>
+      </section>
+
+      <section>
+        <Footer></Footer>
       </section>
 
     </div>

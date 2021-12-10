@@ -1,0 +1,23 @@
+#footer-div {
+    background-color: #293f26;
+    display: flex;
+}
+
+#footer-logo {
+    max-width: 100px;
+    margin: 10px;
+}
+
+.footer-nav {
+    padding: 5px;
+}
+
+#footer-section {
+    position : relative;
+    display: flex;
+}
+
+.icon {
+    max-width: 40px;
+    padding: 5px;
+}
