@@ -31,6 +31,14 @@ function App() {
         </Parallax>
       </section>
 
+      <section id="about-page">
+        <Parallax strength={500}>
+          <div>
+            <About></About>
+          </div>
+        </Parallax>
+      </section>
+
       <section id="project-page">
         <Parallax>
         <div className="div2">
@@ -39,13 +47,6 @@ function App() {
         </Parallax>
       </section>
 
-      <section id="about-page">
-        <Parallax bgImage={forest} strength={500}>
-          <div>
-            <About></About>
-          </div>
-        </Parallax>
-      </section>
 
       <section id="contact-page">
         <Parallax bgImage={savMap} strength={500}>
