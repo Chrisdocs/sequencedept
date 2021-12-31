@@ -2,12 +2,14 @@
   background-color: #fdf2c1;
   padding: 20px 80px;
   border-radius: 10px;
+  box-shadow: 10px 5px 5px black;
 }
 
 .contact-title {
   text-align: center;
-  background-color: #fdf2c1;
-  border-radius: 10px;
+  font-family: 'Pacifico';
+  font-size: 32px;
+  color: #ae804b;
 }
 
 input {
@@ -57,6 +59,8 @@ input {
     padding: 5px 15px 5px 15px;
     border-radius: 10px;
     cursor: pointer;
+    font-family: 'Pacifico';
+    font-size: large;
   }
 
   @media screen and (max-width: 600px) {

@@ -1,5 +1,10 @@
 body {
-  background-color: white;
+  background-color: black;
+}
+
+#about-page {
+  /* background-image: url('../src/assets/images/treesBackground.jpg');
+  background-size: contain; */
 }
 
 .image1 {
@@ -43,5 +48,11 @@ body {
 @media screen and (max-width: 1366px) {
   .image1{
     height: 800px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  #about-page {
+    /* background-color: #2b4b23; */
   }
 }

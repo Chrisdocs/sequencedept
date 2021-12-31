@@ -1,10 +1,16 @@
-#footer-div {
+#container {
     background-color: #293f26;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer-title {
+    
 }
 
 #footer-logo {
-    max-width: 100px;
+    max-width: 80px;
     margin: 10px;
 }
 
@@ -13,11 +19,25 @@
 }
 
 #footer-section {
-    position : relative;
-    display: flex;
+
 }
 
 .icon {
-    max-width: 40px;
+    max-width: 80px;
     padding: 5px;
+    margin-top: auto 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+}
+
+a:hover {
+    color: #c0915f;
+}
+
+#footer-social {
+
 }

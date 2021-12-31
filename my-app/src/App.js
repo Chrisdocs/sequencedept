@@ -12,10 +12,11 @@ import forest from './assets/images/ForestBG1.png';
 import woods from './assets/images/woods.png';
 import sqdptLogo from './assets/images/logo.png';
 import savMap from './assets/images/savanahmap.png';
+import aboutBg from './assets/images/treesBackground3.jpg';
 
 
 
-function App() {
+export default function App() {
 
   return (
     <div className="App">
@@ -32,7 +33,7 @@ function App() {
       </section>
 
       <section id="about-page">
-        <Parallax strength={500}>
+        <Parallax bgImage={aboutBg} strength={200}>
           <div>
             <About></About>
           </div>
@@ -40,11 +41,9 @@ function App() {
       </section>
 
       <section id="project-page">
-        <Parallax>
         <div className="div2">
         <Projects></Projects>
         </div>
-        </Parallax>
       </section>
 
 
@@ -64,6 +63,4 @@ function App() {
   );
 }
 
-
-export default App;
 

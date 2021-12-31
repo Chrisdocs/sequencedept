@@ -4,25 +4,25 @@ import logo from "../../assets/images/logo.png";
 import yt from "../../assets/images/youtubeicon.png";
 import insta from "../../assets/images/instaicon.png";
 import vim from "../../assets/images/vimeo.png";
+import patch from '../../assets/images/patch.png';
 
 function Footer() {
     return (
         <div id="footer-div">
-            <section id="footer-section">
+            <section id="container">
                 <div>
-                    <img id="footer-logo" src={logo}></img>
+                    <img id="footer-logo" src={patch}></img>
                 </div>
                 <div id="footer-title">
                     <h3>Sequence Department</h3>
-                    <p>Based out of Savanah Georgia</p>
+                    <p>SQ-DPT is a production and creative company based our of Savannah, Georgia.</p>
                 </div>
                 <div id="footer-nav">
-                    <nav>
-                        <a>Contact</a>
-                        <a>About</a>
-                        <a>Projects</a>
-                        <a>SQ-DPT</a>
-                    </nav>
+                        <a href={"#header"}>SQ-DPT</a>
+                        <a href={"#about-page"}>About</a>
+                        <a href={"#project-page"}>Projects</a>
+                        <a href={"#contact-page"}>Contact</a>
+                        <a href={"#privacy-page"}>Privacy Policy</a>
                 </div>
                 <div id="footer-social">
                     <img className="icon" src={vim}></img>

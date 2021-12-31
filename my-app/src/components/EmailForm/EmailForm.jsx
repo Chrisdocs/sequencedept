@@ -33,7 +33,7 @@ function EmailForm() {
 
     return(
         <div className="contact">
-            <h1 className="contact-title">Contact</h1>
+            <h1 className="contact-title">Get in touch!</h1>
 
             <form id='contact-form' onSubmit={handleSubmit(onSubmit)}>
 
