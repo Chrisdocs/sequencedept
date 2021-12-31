@@ -1,10 +1,14 @@
 import React from 'react';
+import { Routes, Route, Link } from "react-router-dom";
 import "./styles.css";
+import Privacy from '../../pages/Privacy/Privacy';
 import logo from "../../assets/images/logo.png";
 import yt from "../../assets/images/youtubeicon.png";
 import insta from "../../assets/images/instaicon.png";
 import vim from "../../assets/images/vimeo.png";
 import patch from '../../assets/images/patch.png';
+
+const policy = 'https://www.termsfeed.com/live/3ff4cb31-9902-4140-a588-0e09210e1439'
 
 function Footer() {
     return (
@@ -22,7 +26,7 @@ function Footer() {
                         <a href={"#about-page"}>About</a>
                         <a href={"#project-page"}>Projects</a>
                         <a href={"#contact-page"}>Contact</a>
-                        <a href={"#privacy-page"}>Privacy Policy</a>
+                        <a href={policy} target='_blank'>Privacy Policy</a>
                 </div>
                 <div id="footer-social">
                     <img className="icon" src={vim}></img>

@@ -1,6 +1,8 @@
 import React from 'react';
 import { Parallax, Background } from 'react-parallax';
+import { Routes, Route, Link } from "react-router-dom";
 import './App.css';
+import Privacy from './pages/Privacy/Privacy';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import About from './pages/About/About';
@@ -58,6 +60,9 @@ export default function App() {
       <section>
         <Footer></Footer>
       </section>
+        <Routes>
+            <Route path='privacy-policy' element={Privacy}></Route>
+        </Routes>
 
     </div>
   );
