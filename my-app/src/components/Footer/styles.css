@@ -1,3 +1,5 @@
+
+
 #container {
     background-color: #293f26;
     display: flex;
@@ -18,10 +20,6 @@
     padding: 5px;
 }
 
-#footer-section {
-
-}
-
 .icon {
     max-width: 80px;
     padding: 5px;
@@ -31,7 +29,7 @@
 a {
     text-decoration: none;
     color: black;
-    padding: 5px;
+    padding-left: 10px;
 }
 
 a:hover {
@@ -39,5 +37,17 @@ a:hover {
 }
 
 #footer-social {
+    max-width: 100%;
+}
 
+@media screen and (max-width: 414px) {
+    #container {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-social {
+        padding-top: 10px;
+    }
 }

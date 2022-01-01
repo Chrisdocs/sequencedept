@@ -13,3 +13,10 @@
 #card-title {
     font-family: 'Pacifico';
 }
+
+#card-welcome {
+    font-family: 'Pacifico';
+    text-align: center;
+    font-size: 32px;
+    color: #293f26;
+}

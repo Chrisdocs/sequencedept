@@ -18,7 +18,6 @@ window.addEventListener("scroll", function() {
         <div>
             <section>
                         <div id="navbar">
-                            <a id="logo">SQ-DPT Logo</a>
                             <div id="navbar-right">
                                 <a className="active" href={"#header"}>SQ-DPT</a>
                                 <a href={"#about-page"}>About</a>

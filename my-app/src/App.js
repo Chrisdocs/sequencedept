@@ -1,17 +1,12 @@
 import React from 'react';
-import { Parallax, Background } from 'react-parallax';
-import { Routes, Route, Link } from "react-router-dom";
+import { Parallax } from 'react-parallax';
 import './App.css';
-import Privacy from './pages/Privacy/Privacy';
-import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
 import Navigation from './components/Navigation/Nav';
 import Projects from './pages/Projects/Projects';
-import worldMap from './assets/images/Old-world-map.jpeg'
 import forest from './assets/images/ForestBG1.png';
-import woods from './assets/images/woods.png';
 import sqdptLogo from './assets/images/logo.png';
 import savMap from './assets/images/savanahmap.png';
 import aboutBg from './assets/images/treesBackground3.jpg';
@@ -28,7 +23,7 @@ export default function App() {
         <Parallax bgImage={forest} strength={500}>
           <div className="image1">
             <div className="box">
-              <img className="logo" src={sqdptLogo} />
+              <img className="logo" src={sqdptLogo} alt='Sequence Department logo'/>
             </div>
           </div>
         </Parallax>
@@ -60,10 +55,6 @@ export default function App() {
       <section>
         <Footer></Footer>
       </section>
-        <Routes>
-            <Route path='privacy-policy' element={Privacy}></Route>
-        </Routes>
-
     </div>
   );
 }
