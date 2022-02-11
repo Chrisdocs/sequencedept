@@ -1,13 +1,8 @@
 .contact {
   background-color: #f8f4e1;
   padding: 25px 80px;
-  background-image: url('../../assets/images/postcard.jpg');
-  background-size: contain;
+  background-size: 100%;
   position: relative;
-}
-
-#contact-form {
-  margin-top: 150px;
 }
 
 .contact-title {
@@ -39,7 +34,7 @@ input {
   .input-style {
     padding: 10px 20px;
     margin: 8px 0;
-    box-sizing: border-box;
+    box-sizing: content-box;
     resize: vertical;
   }
 
@@ -52,15 +47,9 @@ input {
   }
 
   .submit-div {
-		width: 92px;
-		height: 117px;
-		left: 965px;
-		top: 21px;
 		overflow: visible;
-  }
-
-  .text-area-style {
-    
+    display: flex;
+    justify-content: right;
   }
 
   .submit-button {
@@ -86,4 +75,84 @@ input {
       width: 100%;
     }
   }
+
+
+  /*Below is a working scalable version of the contact form*/
+
+  /* .contact {
+    background-color: #fdf2c1;
+    padding: 20px 80px;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px black;
+  }
+  
+  .contact-title {
+    text-align: center;
+    font-family: 'Pacifico';
+    font-size: 32px;
+    color: #ae804b;
+  }
+  
+  input {
+      width: 600px;
+    }
+    textarea {
+      height: 10em;
+      width: 600px;  }
+  
+    div[role='alert'] {
+      color: red;
+      margin-top: 1em;
+    }
+  
+    .message-chars {
+  
+      margin: auto 0;
+      text-align: left;
+      font-size: smaller;
+    }
+  
+    .input-style {
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border-radius: 10px;
+      resize: vertical;
+    }
+  
+    .text-area-style {
+        width: 100%;
+        height: 150px;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        resize: none;
+    }
+  
+    .submit-div {
+      text-align: center;
+    }
+  
+    .submit-button {
+      background-color: #c0915f;
+      border: none;
+      text-decoration: none;
+      padding: 5px 15px 5px 15px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-family: 'Pacifico';
+      font-size: large;
+    }
+  
+    .submit-button:hover {
+      background-color: #e4a54c;
+    }
+  
+    @media screen and (max-width: 600px) {
+      .input-style {
+        width: 100%;
+      }
+    } */
+  
+  
 
