@@ -1,8 +1,13 @@
 .contact {
-  background-color: #fdf2c1;
-  padding: 20px 80px;
-  border-radius: 10px;
-  box-shadow: 10px 5px 5px black;
+  background-color: #f8f4e1;
+  padding: 25px 80px;
+  background-image: url('../../assets/images/postcard.jpg');
+  background-size: contain;
+  position: relative;
+}
+
+#contact-form {
+  margin-top: 150px;
 }
 
 .contact-title {
@@ -13,6 +18,7 @@
 }
 
 input {
+  display: flex;
     width: 600px;
   }
   textarea {
@@ -25,17 +31,15 @@ input {
   }
 
   .message-chars {
-
     margin: auto 0;
     text-align: left;
     font-size: smaller;
   }
 
   .input-style {
-    padding: 12px 20px;
+    padding: 10px 20px;
     margin: 8px 0;
     box-sizing: border-box;
-    border-radius: 10px;
     resize: vertical;
   }
 
@@ -44,27 +48,37 @@ input {
       height: 150px;
       padding: 12px 20px;
       box-sizing: border-box;
-      border-radius: 10px;
       resize: none;
   }
 
   .submit-div {
-    text-align: center;
+		width: 92px;
+		height: 117px;
+		left: 965px;
+		top: 21px;
+		overflow: visible;
+  }
+
+  .text-area-style {
+    
   }
 
   .submit-button {
     background-color: #c0915f;
     border: none;
     text-decoration: none;
-    padding: 5px 15px 5px 15px;
-    border-radius: 10px;
+    padding: 40px 25px 40px 25px;
     cursor: pointer;
     font-family: 'Pacifico';
     font-size: large;
+    background-image: url('../../assets/images/stamp.jpg');
+    background-size: contain;
   }
 
   .submit-button:hover {
     background-color: #e4a54c;
+    background-image: url('../../assets/images/stampb.jpg');
+    background-size: contain;
   }
 
   @media screen and (max-width: 600px) {

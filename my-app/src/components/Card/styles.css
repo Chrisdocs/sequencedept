@@ -3,7 +3,8 @@
 
 #card-info {
    flex-direction: row;
-   text-align: center;
+   text-align: left;
+   color: white;
 }
 
 #card-video {

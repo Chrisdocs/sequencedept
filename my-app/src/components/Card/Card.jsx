@@ -7,9 +7,6 @@ function Cards() {
     return (
         <div>
             <Card id="card">
-                <div>
-                    <h2 id='card-welcome'>Check out some of our work!</h2>
-                </div>
                 <div id="card-video">
                     <YoutubeEmbed embedId="jRyo0uxQ5DE" />
                 </div>

@@ -33,12 +33,19 @@ function EmailForm() {
 
     return(
         <div className="contact">
-            <h1 className="contact-title">Get in touch!</h1>
 
             <form id='contact-form' onSubmit={handleSubmit(onSubmit)}>
 
+
             <input type='hidden' name='contact_number' value={contactNumber} />
-                
+
+                <div className="submit-div">
+                    <button
+                        className="submit-button"
+                        type='submit'
+                    >Send</button>
+                </div>
+
                 {errors.username && errors.username.type === "required" && (
                     <div role="alert">Name is required<br/></div>
                 )}
@@ -67,6 +74,7 @@ function EmailForm() {
                         } 
                     })}  />
                 <br/>
+            
 
                 {errors.message && errors.message.type === "required" && (
                     <div role="alert">A message is required<br/></div>
@@ -82,12 +90,7 @@ function EmailForm() {
                 />
                 <p className="message-chars">{messageCharactersWatch} characters left</p>
                 <br/>
-                <div className="submit-div">
-                    <button
-                        className="submit-button"
-                        type='submit'
-                    >Send</button>
-                </div>
+
             </form>
         </div>
     );

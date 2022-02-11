@@ -19,10 +19,10 @@ window.addEventListener("scroll", function() {
             <section>
                         <div id="navbar">
                             <div id="navbar-right">
-                                <a className="active" href={"#header"}>SQ-DPT</a>
-                                <a href={"#about-page"}>About</a>
-                                <a href={"#project-page"}>Projects</a>
-                                <a href={"#contact-page"}>Contact</a>
+                                <a className='nav-text active' href={"#header"}>SQ-DPT</a>
+                                <a className='nav-text' href={"#about-page"}>About</a>
+                                <a className='nav-text' href={"#project-page"}>Projects</a>
+                                <a className='nav-text' href={"#contact-page"}>Contact</a>
                             </div>
                         </div>
             </section>
