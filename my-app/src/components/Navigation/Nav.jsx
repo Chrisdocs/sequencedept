@@ -5,6 +5,7 @@ function Navigation() {
 
 
 window.addEventListener("scroll", function() {
+	
     let elementTarget = this.document.getElementById("header");
 
     if (this.window.scrollY > (elementTarget.offsetTop + elementTarget.offsetHeight)) {

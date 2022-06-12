@@ -60,13 +60,13 @@ input {
     cursor: pointer;
     font-family: 'Pacifico';
     font-size: large;
-    background-image: url('../../assets/images/stamp.jpg');
+    background-image: url('../../assets/images/stamp.webp');
     background-size: contain;
   }
 
   .submit-button:hover {
     background-color: #e4a54c;
-    background-image: url('../../assets/images/stampb.jpg');
+    background-image: url('../../assets/images/stampb.webp');
     background-size: contain;
   }
 

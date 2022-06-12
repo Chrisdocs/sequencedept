@@ -1,9 +1,9 @@
 import React from 'react';
 import "./styles.css";
-import yt from "../../assets/images/youtubeicon.png";
-import insta from "../../assets/images/instaicon.png";
-import vim from "../../assets/images/vimeo.png";
-import patch from '../../assets/images/patch.png';
+import yt from "../../assets/images/youtubeicon.webp";
+import insta from "../../assets/images/instaicon.webp";
+import vim from "../../assets/images/vimeo.webp";
+import patch from '../../assets/images/patch.webp';
 
 const policy = 'https://www.termsfeed.com/live/3ff4cb31-9902-4140-a588-0e09210e1439'
 const youtube = 'https://www.youtube.com/channel/UCwESxTwtk_cQMcAeRQvsN7g';

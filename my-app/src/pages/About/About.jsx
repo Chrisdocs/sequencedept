@@ -1,6 +1,6 @@
 import React from 'react';
 import "./styles.css";
-import Sign from "../../assets/images/SQDPTsign.png"
+import Sign from "../../assets/images/SQDPTsign.webp"
 
 function About() {
     return (

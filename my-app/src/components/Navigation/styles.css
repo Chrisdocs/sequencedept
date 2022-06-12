@@ -1,30 +1,12 @@
+.nav-text {
+	color: white;
+}
+
 #navbar {
-    background-color: #333; /* Black background color */
-    position: fixed; /* Make it stick/fixed */
-    top: -50px; /* Hide the navbar 50 px outside of the top view */
-    width: 100%; /* Full width */
-    transition: top 0.4s; /* Transition effect when sliding down (and up) */
-    z-index: 99;
-  }
-  
-  /* Style the navbar links */
-  #navbar-right {
-    font-weight: bolder;
-    padding: 8px;
-    text-decoration: none;
-    text-align: center;
-    font-family: 'Helvetica';
-    font-size: 20px;
-  }
-
-  .nav-text {
-    color: white;
-  }
-
-  a:hover {
-    color: #c0915f;
-  }
-
-  @media screen and (max-width: 600px) {
-      
-  }
+	background-color: #333; /* Black background color */
+	position: fixed; /* Make it stick/fixed */
+	top: -50px; /* Hide the navbar 50 px outside of the top view */
+	width: 100%; /* Full width */
+	transition: top 0.4s; /* Transition effect when sliding down (and up) */
+	z-index: 99;
+}

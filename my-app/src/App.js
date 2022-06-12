@@ -6,10 +6,10 @@ import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
 import Navigation from './components/Navigation/Nav';
 import Projects from './pages/Projects/Projects';
-import forest from './assets/images/ForestBG1.png';
-import sqdptLogo from './assets/images/logo.png';
-import savMap from './assets/images/savanahmap.png';
-import aboutBg from './assets/images/treesBackground3.jpg';
+import forest from './assets/images/ForestBG1.webp';
+import sqdptLogo from './assets/images/logo.webp';
+import savMap from './assets/images/savanahmap.webp';
+import aboutBg from './assets/images/treesBackground3.webp';
 
 
 
