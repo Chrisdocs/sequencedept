@@ -1,22 +1,12 @@
-
-
 #card-info {
-   flex-direction: row;
    text-align: left;
    color: white;
+	 padding: 50px;
 }
 
 #card-video {
-    padding: 20px;
 }
 
 #card-title {
     font-family: 'Pacifico';
-}
-
-#card-welcome {
-    font-family: 'Pacifico';
-    text-align: center;
-    font-size: 32px;
-    color: #293f26;
 }
