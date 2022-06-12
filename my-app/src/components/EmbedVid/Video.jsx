@@ -1,19 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 import "./styles.css";
 
+
 const YoutubeEmbed = ({ embedId }) => (
-  <div id="projects-container">
-    <div id="video-container">
-      <iframe 
+
+	<div className="carousel-container">
+			<iframe 
         src={`https://www.youtube.com/embed/${embedId}`}
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
         title="Embedded youtube"
       />
-    </div>
-  </div>
+	</div>
 );
 
 YoutubeEmbed.propTypes = {
