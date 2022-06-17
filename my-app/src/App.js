@@ -9,7 +9,7 @@ import Projects from './pages/Projects/Projects';
 import forest from './assets/images/ForestBG1.webp';
 import sqdptLogo from './assets/images/logo.webp';
 import savMap from './assets/images/savanahmap.webp';
-import aboutBg from './assets/images/treesBackground3.webp';
+import aboutBg from './assets/images/portland.webp';
 
 
 

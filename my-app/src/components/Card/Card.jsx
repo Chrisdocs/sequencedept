@@ -1,6 +1,5 @@
 import React from "react";
 import Card from "react-bootstrap/Card"
-import YoutubeEmbed from "../EmbedVid/Video";
 import { Carousel } from "react-responsive-carousel"
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import './styles.css';
@@ -11,7 +10,6 @@ function Cards() {
 				<div>
 						<Card>
                 <div id="card-video">
-                    <YoutubeEmbed embedId="jRyo0uxQ5DE" />
                 </div>
                 <div id='card-info'>
                     <div id="card-title">
@@ -26,7 +24,6 @@ function Cards() {
 				<div>
 						<Card>
                 <div id="card-video">
-                    <YoutubeEmbed embedId="jRyo0uxQ5DE" />
                 </div>
                 <div id='card-info'>
                     <div id="card-title">
