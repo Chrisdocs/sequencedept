@@ -31,7 +31,7 @@ export default function App() {
       </section>
 
       <section id="about-page">
-        <Parallax bgImage={aboutBg} strength={200}>
+        <Parallax bgImage={aboutBg} strength={500}>
           <div>
             <About></About>
           </div>
