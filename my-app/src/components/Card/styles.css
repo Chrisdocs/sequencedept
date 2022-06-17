@@ -1,12 +1,22 @@
-#card-info {
-   text-align: left;
-   color: white;
-	 padding: 50px;
+.video-wrapper{
+	position: relative;
+	padding-top: 56.25%;
 }
 
-#card-video {
+.react-player{
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
-#card-title {
-    font-family: 'Pacifico';
+.text-wrapper{
+	position: relative;
+}
+
+.video-title{
+	color: white;
+}
+
+.video-info{
+	color: white;
 }

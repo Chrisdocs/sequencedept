@@ -5,10 +5,8 @@ import Cards from '../../components/Card/Card';
 function Projects() {
 
     return (
-        <div id="cardSection">
-            <section>
-                <Cards></Cards>
-            </section>
+        <div>
+          <Cards></Cards>
         </div>
     );
 }
