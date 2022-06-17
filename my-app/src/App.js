@@ -10,6 +10,7 @@ import forest from './assets/images/ForestBG1.webp';
 import sqdptLogo from './assets/images/logo.webp';
 import savMap from './assets/images/savanahmap.webp';
 import aboutBg from './assets/images/portland.webp';
+import logs from '../src/assets/images/longs.webp';
 
 
 
@@ -38,9 +39,11 @@ export default function App() {
       </section>
 
       <section id="project-page">
+				<Parallax bgImage={logs} strength={500}>
         <div className="div2">
         <Projects></Projects>
         </div>
+				</Parallax>
       </section>
 
 

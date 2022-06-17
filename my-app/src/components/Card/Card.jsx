@@ -8,7 +8,7 @@ import "./styles.css";
 function Cards() {
   return (
     <Carousel>
-		<div>
+		<div className="card-wrapper">
 			<div className="video-wrapper">
 				<ReactPlayer
 					className="react-player"

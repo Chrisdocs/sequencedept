@@ -1,6 +1,10 @@
+.card-wrapper{
+
+}
+
 .video-wrapper{
 	position: relative;
-	padding-top: 56.25%;
+	padding-top: 45.25%;
 }
 
 .react-player{
@@ -11,6 +15,9 @@
 
 .text-wrapper{
 	position: relative;
+	background-color: black;
+	padding: 10px;
+	margin: 0 9.7% 0 9.7%;
 }
 
 .video-title{
@@ -19,4 +26,8 @@
 
 .video-info{
 	color: white;
+}
+
+.carousel .control-dots {
+	position: relative;
 }
