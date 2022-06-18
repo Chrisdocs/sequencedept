@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import { Carousel } from "react-responsive-carousel";
-import ReactPlayer from "react-player/lazy";
+import ReactPlayer from "react-player";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./styles.css";
 
