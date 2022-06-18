@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&display=swap');
 
 #container {
     background-color: black;
@@ -10,6 +10,7 @@
 #footer-title {
 	color: white;
   font-weight: 100;
+	font-family: 'Inter', sans-serif;
 }
 
 #footer-logo {
@@ -31,6 +32,7 @@ a {
     text-decoration: none;
     color: white;
     padding-left: 10px;
+		font-family: 'Inter', sans-serif;
 }
 
 a:hover {

@@ -1,6 +1,4 @@
-.card-wrapper{
-
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&display=swap');
 
 .video-wrapper{
 	position: relative;
@@ -22,10 +20,13 @@
 
 .video-title{
 	color: white;
+	font-size: larger;
+	font-family: 'Inter', sans-serif;
 }
 
 .video-info{
 	color: white;
+	font-family: 'Inter', sans-serif;
 }
 
 .carousel .control-dots {
