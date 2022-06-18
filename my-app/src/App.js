@@ -16,11 +16,12 @@ import logs from "./assets/images/longs.webp";
 export default function App() {
   const scrollStr = 500;
   const isMobile = useMediaQuery({
-    query: "(max-width: 390px)",
+    query: "(max-width: 1100px)",
   });
 
   return (
     <div className="App">
+
       {isMobile ? (
         <div>
           <div className="parallax-section">

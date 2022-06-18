@@ -13,67 +13,56 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.div2 {
-  margin: 2%;
+.parallax-section {
+  position: relative;
+  width: 100%;
+  height: 1400px;
+}
+.parallax-child-section {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1400px;
 }
 
-.logo {
-  background-color: transparent;
-}
-
-.contact-box {
+#frontlashID {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 100%;
+  transform: translateZ(0);
+  will-change: transform;
+  z-index: 1;
 }
-
-.parallax-about {
-  /* The image used */
-  background-image: url("./assets/images/portland.webp");
-
-  /* Full height */
-  height: 100%;
-
-  /* Create the parallax scrolling effect */
+.fw-main-row-proj {
   background-attachment: scroll;
-  background-position: center;
+  background-image: url(./assets/images/longs.webp);
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.parallax-head {
-  /* The image used */
-  background-image: url("./assets/images/ForestBG1.webp");
-
-  /* Full height */
-  height: 100%;
-
-  /* Create the parallax scrolling effect */
+.fw-main-row-abt {
   background-attachment: scroll;
-  background-position: center;
+  background-image: url(./assets/images/portland.webp);
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.parallax-project {
-  /* The image used */
-  background-image: url("./assets/images/longs.webp");
-
-  /* Full height */
-  height: 100%;
-
-  /* Create the parallax scrolling effect */
+.fw-main-row-cont {
   background-attachment: scroll;
-  background-position: center;
+  background-image: url(./assets/images/savanahmap.webp);
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.parallax-contact {
-  /* The image used */
-  background-image: url("./assets/images/savanahmap.webp");
-
-  /* Full height */
-  height: 100%;
-
-  /* Create the parallax scrolling effect */
+.fw-main-row-head {
   background-attachment: scroll;
-  background-position: center;
+  background-image: url(./assets/images/ForestBG1.webp);
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -129,56 +118,12 @@ body {
   }
 }
 
-.parallax-section {
-  position: relative;
-  width: 100%;
-  height: 1400px;
-}
-.parallax-child-section {
-  clip: rect(0, auto, auto, 0);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 1400px;
+@media screen and (max-width: 300px){
+	
+	.box img{
+		width: 80vw;
+	}
+
 }
 
-#frontlashID {
-  position: fixed;
-  display: block;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transform: translateZ(0);
-  will-change: transform;
-  z-index: 1;
-}
-.fw-main-row-proj {
-  background-attachment: scroll;
-  background-image: url(./assets/images/longs.webp);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.fw-main-row-abt {
-  background-attachment: scroll;
-  background-image: url(./assets/images/portland.webp);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.fw-main-row-cont {
-  background-attachment: scroll;
-  background-image: url(./assets/images/savanahmap.webp);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.fw-main-row-head {
-  background-attachment: scroll;
-  background-image: url(./assets/images/ForestBG1.webp);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+

@@ -1,6 +1,5 @@
 #sqdpt-sign {
     max-width: 65%;
-    padding: 65px 20px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -8,7 +7,7 @@
 
 #container-div {
     /* background-color: #2b4b23; */
-    max-width: 90%;
+    max-width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -19,7 +18,7 @@
 
 @media screen and (max-width: 415px) {
     #sqdpt-sign {
-        max-width: 95%;
+        max-width: 100%;
     }
 }
 
