@@ -23,9 +23,9 @@ export default function App() {
     <div className="App">
       {isMobile ? (
         <div>
-          <div class="parallax-section">
-            <div class="parallax-child-section">
-              <section class="fw-main-row-head" id="frontlashID">
+          <div className="parallax-section">
+            <div className="parallax-child-section">
+              <section className="fw-main-row-head" id="frontlashID">
                 <div className="image1">
                   <div className="box">
                     <img
@@ -39,25 +39,25 @@ export default function App() {
             </div>
           </div>
 
-          <div class="parallax-section">
-            <div class="parallax-child-section">
-              <section class="fw-main-row-abt" id="frontlashID">
+          <div className="parallax-section">
+            <div className="parallax-child-section">
+              <section className="fw-main-row-abt" id="frontlashID">
                 <About></About>
               </section>
             </div>
           </div>
 
-          <div class="parallax-section">
-            <div class="parallax-child-section">
-              <section class="fw-main-row-proj" id="frontlashID">
+          <div className="parallax-section">
+            <div className="parallax-child-section">
+              <section className="fw-main-row-proj" id="frontlashID">
                 <Projects></Projects>
               </section>
             </div>
           </div>
 
-          <div class="parallax-section">
-            <div class="parallax-child-section">
-              <section class="fw-main-row-cont" id="frontlashID">
+          <div className="parallax-section">
+            <div className="parallax-child-section">
+              <section className="fw-main-row-cont" id="frontlashID">
                 <Contact></Contact>
               </section>
             </div>
@@ -110,43 +110,6 @@ export default function App() {
           </section>
         </div>
       )}
-
-      {/* <section
-        className="parallax-head section-container"
-        id="header"
-        style={{ height: "100%" }}
-      >
-        <div className="image1">
-          <div className="box">
-            <img
-              className="logo"
-              src={sqdptLogo}
-              alt="Sequence Department logo"
-            />
-          </div>
-        </div>
-      </section>
-
-      <section className="section-container parallax-about" id="about-page">
-        <div>
-          <About></About>
-        </div>
-      </section>
-
-      <section className="parallax-project section-container" id="project-page">
-        <div className="div2">
-          <Projects></Projects>
-        </div>
-      </section>
-
-      <section className="parallax-contact section-container" id="contact-page">
-        <div className="contact-box">
-          <Contact></Contact>
-        </div>
-      </section> */}
-
-      {/*  */}
-
       <section>
         <Footer></Footer>
       </section>

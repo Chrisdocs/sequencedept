@@ -1,5 +1,4 @@
 import React from "react";
-import Card from "react-bootstrap/Card";
 import { Carousel } from "react-responsive-carousel";
 import ReactPlayer from "react-player";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -13,7 +12,7 @@ function Cards() {
 				<ReactPlayer
 					className="react-player"
 					url="https://vimeo.com/226091135"
-					controls="true"
+					controls={true}
 					width="100%"
 					height="100%"
 				/>
@@ -32,7 +31,7 @@ function Cards() {
 				<ReactPlayer
 					className="react-player"
 					url="https://vimeo.com/226091135"
-					controls="true"
+					controls={true}
 					width="100%"
 					height="100%"
 				/>
