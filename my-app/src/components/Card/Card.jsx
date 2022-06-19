@@ -6,7 +6,7 @@ import "./styles.css";
 
 function Cards() {
   return (
-    <Carousel>
+    <Carousel showThumbs={false}>
 		<div className="card-wrapper">
 			<div className="video-wrapper">
 				<ReactPlayer
