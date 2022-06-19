@@ -1,99 +1,127 @@
-import React, { useState } from "react";
-import "./styles.css";
-import { useForm } from 'react-hook-form';
-import { init, sendForm } from 'emailjs-com'
-init('user_gI3ZavgnRDiZw3W8xBTdX')
+import React from "react";
+import { useState } from "react";
+import ContApi from "../../pages/api/contact";
+import './styles.css'
 
+export default function Contact() {
+	
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+  const [submitted, setSubmitted] = useState(false);
 
-function EmailForm() {
-    
-    const { handleSubmit, register, watch, formState: {errors} } = useForm();
-    const onSubmit = values => {
-        console.log(values);
-        generateContactNum();
-        
-        sendForm('default_service', 'template_uppgqdq', '#contact-form')
-        .then(function(response) {
-            console.log('Success!', response.status, response.text);
-        }, function(error) {
-            console.log('Failed...', error);
-        });
-    }
-    
-        const [contactNumber, setContactNumber] = useState("000000");
-    
-        const generateContactNum = () => {
-            const numStr = "000000" + (Math.random() * 1000000 | 0);
-            setContactNumber(numStr.substring(numStr.length - 6));
-        }
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Sending...");
 
-    const message = watch('message') || "";
-    const messageCharactersWatch = 500 - message.length;
+    let data = {
+      name,
+      email,
+      subject,
+      message,
+    };
 
+    fetch("api/contact", {
+      method: "POST",
+      headers: {
+        Accept: "application/json, text/plain, */*",
+        "Content-type": "application/json",
+      },
+      body: JSON.stringify(data),
+    }).then((res) => {
+      console.log("Response received");
 
-    return(
-        <div className="contact">
+      if (res.status === 200) {
+        console.log("Success!");
+        setSubmitted(true);
+        setName("");
+        setEmail("");
+        setMessage("");
+				setSubject("");
+      } else {
+				console.log("Your message failed to send.")
+			}
+    });
+  };
 
-            <form id='contact-form' onSubmit={handleSubmit(onSubmit)}>
+  const regex =
+    /(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9]))\.){3}(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9])|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/;
 
+  const messageCharactersWatch = 500 - message.length;
 
-            <input type='hidden' name='contact_number' value={contactNumber} />
+  return (
+    <div className="containerDiv">
 
-                <div className="submit-div">
-                    <button
-                        className="submit-button"
-                        type='submit'
-                    >Send</button>
-                </div>
+      <div id="contact" className="formContainer">
+        <form id="form">
+          <label htmlFor="name">
+            <input
+              type="text"
+              name="name"
+              className="formInput"
+              placeholder="Name"
+              onChange={(e) => {
+                setName(e.target.value);
+              }}
+            />
+          </label>
+          <br />
 
-                {errors.username && errors.username.type === "required" && (
-                    <div role="alert">Name is required<br/></div>
-                )}
-                <input
-                    className="input-style" 
-                    placeholder="Name"
-                    aria-invalid={errors.username ? "true" : "false"}
-                    {...register('username', {
-                        required: true
-                        })}
-                    />
-                <br/>
+          <label htmlFor="email">
+            <input
+              className="formInput"
+              type="email"
+              name="email"
+              placeholder="Email"
+              onChange={(e) => {
+                setEmail(e.target.value);
+              }}
+            />
+          </label>
+          <br />
 
-                {errors.email && errors.email.type === "required" && (
-                    <div role="alert">Email is required<br/></div>
-                )}
-                <input
-                className="input-style" 
-                type='email'
-                placeholder='Email'
-                {...register('email', {
-                    required: true,
-                    pattern: {
-                        value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                        message: "Invalid email address."
-                        } 
-                    })}  />
-                <br/>
-            
+          <label htmlFor="subject">
+            <input
+              className="formInput"
+              type="text"
+              name="subject"
+              placeholder="subject"
+              onChange={(e) => {
+                setSubject(e.target.value);
+              }}
+            />
+          </label>
+          <br />
 
-                {errors.message && errors.message.type === "required" && (
-                    <div role="alert">A message is required<br/></div>
-                )}
-                <textarea
-                className="text-area-style"  
-                name='message'
-                placeholder='Message'
-                maxLength='500'
-                {...register('message', {
-                    required: true 
-                })} 
-                />
-                <p className="message-chars">{messageCharactersWatch} characters left</p>
-                <br/>
+          <textarea
+            className="formMessage"
+            name="message"
+            placeholder="Message"
+            maxLength="500"
+            type="text"
+            onChange={(e) => {
+              setMessage(e.target.value);
+            }}
+          />
+          <br />
+          <p className="charCount">{messageCharactersWatch}/500</p>
 
-            </form>
-        </div>
-    );
-};
-
-export default EmailForm;
+          <div className="submitDiv">
+            <button
+              className="submitBtn"
+              type="submit"
+              onClick={(e) => {
+                email.match(regex)
+                  ? handleSubmit(e)
+                  : console.log("email not valid");
+              }}
+            >
+              Send
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  );
+}
