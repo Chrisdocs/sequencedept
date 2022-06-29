@@ -3,46 +3,6 @@ import { useState } from "react";
 import './styles.css'
 
 export default function Contact() {
-	
-  // const [name, setName] = useState("");
-  // const [email, setEmail] = useState("");
-  // const [subject, setSubject] = useState("");
-  // const [message, setMessage] = useState("");
-  // const [submitted, setSubmitted] = useState(false);
-
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   console.log("Sending...");
-
-  //   let data = {
-  //     name,
-  //     email,
-  //     subject,
-  //     message,
-  //   };
-
-  //   fetch("api/contact", {
-  //     method: "POST",
-  //     headers: {
-  //       Accept: "application/json, text/plain, */*",
-  //       "Content-type": "application/json",
-  //     },
-  //     body: JSON.stringify(data),
-  //   }).then((res) => {
-  //     console.log("Response received");
-
-  //     if (res.status === 200) {
-  //       console.log("Success!");
-  //       setSubmitted(true);
-  //       setName("");
-  //       setEmail("");
-  //       setMessage("");
-	// 			setSubject("");
-  //     } else {
-	// 			console.log("Your message failed to send.")
-	// 		}
-  //   });
-  // };
 
 	const [ mailerState, setMailerState ] = useState({
 		name: "",
@@ -61,7 +21,7 @@ export default function Contact() {
 	const submitEmail = async (e) => {
 		e.preventDefault();
 		console.log({ mailerState });
-		const response = await fetch("/send", {
+		const response = await fetch("https://sqdpt.herokuapp.com/send", {
 			method: "POST",
 			headers: {
 				"Content-type": "application/json",
