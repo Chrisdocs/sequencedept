@@ -21,7 +21,7 @@ export default function Contact() {
 	const submitEmail = async (e) => {
 		e.preventDefault();
 		console.log({ mailerState });
-		const response = await fetch("sqdpt.herokuapp.com/send", {
+		const response = await fetch("/send", {
 			method: "POST",
 			headers: {
 				"Content-type": "application/json",
