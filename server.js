@@ -21,6 +21,8 @@ const CLIENT = process.env.OAUTH_CLIENTID;
 
 let transporter = nodemailer.createTransport({
 	service: "gmail",
+	host: "smtp.gmail.com",
+	port: 465,
 	auth: {
 		type: "OAuth2",
 		user: EMAIL,
