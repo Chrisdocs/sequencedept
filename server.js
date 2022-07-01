@@ -49,7 +49,7 @@ let transporter = nodemailer.createTransport({
  
 	transporter.sendMail(mailOptions, function (err, data) {
 		if (err) {
-			console.log("Error " + err);
+			console.log("Error " + err, "data " + data);
 			res.json({
 				status: "fail"
 			});
