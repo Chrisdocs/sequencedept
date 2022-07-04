@@ -1,8 +1,31 @@
 const express = require("express");
 const nodemailer = require("nodemailer");
 const app = express();
+const { google } = require("googleapis");
+const OAuth2 = google.auth.OAuth2;
 const cors = require("cors");
 require('dotenv').config()
+
+
+
+const PASSWORD = process.env.password;
+const EMAIL = process.env.email;
+const TOKEN = process.env.OAUTH_REFRESH_TOKEN;
+const SECRET = process.env.OAUTH_CLIENT_SECRET;
+const CLIENT = process.env.OAUTH_CLIENTID;
+
+const oauthClient = new OAuth2(
+	CLIENT,
+	SECRET,
+
+	"https://developers.google.com/oauthplayground"
+)
+
+oauthClient.setCredentials({
+	refresh_token: TOKEN
+});
+
+const accessToken = oauthClient.getAccessToken()
 
 // middleware
 app.use(express.json());
@@ -13,16 +36,8 @@ app.listen(port, () => {
 	console.log(`Server is running on port: ${port}`)
 });
 
-const PASSWORD = process.env.password;
-const EMAIL = process.env.email;
-const TOKEN = process.env.OAUTH_REFRESH_TOKEN;
-const SECRET = process.env.OAUTH_CLIENT_SECRET;
-const CLIENT = process.env.OAUTH_CLIENTID;
-
 let transporter = nodemailer.createTransport({
 	service: "gmail",
-	host: "smtp.gmail.com",
-	port: 465,
 	auth: {
 		type: "OAuth2",
 		user: EMAIL,
@@ -30,6 +45,7 @@ let transporter = nodemailer.createTransport({
 		clientId: CLIENT,
 		clientSecret: SECRET,
 		refreshToken: TOKEN,
+		accessToken: accessToken
 	},
  });
 
