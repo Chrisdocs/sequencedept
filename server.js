@@ -6,8 +6,6 @@ const OAuth2 = google.auth.OAuth2;
 const cors = require("cors");
 require('dotenv').config()
 
-
-
 const PASSWORD = process.env.password;
 const EMAIL = process.env.email;
 const TOKEN = process.env.OAUTH_REFRESH_TOKEN;
