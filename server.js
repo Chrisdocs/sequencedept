@@ -6,6 +6,7 @@
 // const sgMail = require('@sendgrid/mail')
 // const cors = require("cors");
 require('dotenv').config()
+const sgMail = require('@sendgrid/mail');
 
 const PASSWORD = process.env.password;
 const EMAIL = process.env.email;
@@ -75,7 +76,7 @@ const CLIENT = process.env.OAUTH_CLIENTID;
 // 	});
 //  });
 
-const sgMail = require('@sendgrid/mail');
+
 
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 const msg = {
@@ -85,4 +86,11 @@ const msg = {
 		text: `You received this email from ${req.body.mailerState.name} @ ${req.body.mailerState.email} They wrote: \n${req.body.mailerState.message}`,
 };
 
-sgMail.send(msg)
+sgMail
+  .send(msg)
+  .then(() => {
+    console.log('Email sent')
+  })
+  .catch((error) => {
+    console.error(error)
+  })
