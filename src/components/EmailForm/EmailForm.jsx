@@ -22,7 +22,7 @@ export default function Contact() {
 		e.preventDefault();
 		console.log({ mailerState });
 		const response = await fetch("/send", {
-			method: "POST",
+			method: "PUT",
 			headers: {
 				"Content-type": "application/json",
 			},
