@@ -19,14 +19,19 @@ const PORT = process.env.PORT || 3001;
 app.use(express.json());
 app.use(cors());
 
-const transporter = nodemailer.createTransport(
-  sendGridTransport({
-    auth: {
-			user: 'apikey',
-      password: GOOGLE,
-    },
-  })
-);
+let transporter = nodemailer.createTransport({
+	service: "gmail",
+	host: "smtp.gmail.com",
+	port: 465,
+	auth: {
+		type: "OAuth2",
+		user: EMAIL,
+		pass: PASSWORD,
+		clientId: CLIENT,
+		clientSecret: SECRET,
+		refreshToken: TOKEN,
+	},
+ });
 
 transporter.verify((err, success) => {
   err
