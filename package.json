@@ -42,12 +42,13 @@
     "workbox-strategies": "^5.1.4",
     "workbox-streams": "^5.1.4"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
+	"scripts": {
+		"start-client": "react-scripts start",
+		"build": "react-scripts build && (cd server && yarn install)",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject",
+		"start": "cd server && yarn start"
+	},
   "eslintConfig": {
     "extends": [
       "react-app",

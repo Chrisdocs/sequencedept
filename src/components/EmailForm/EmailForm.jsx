@@ -21,8 +21,8 @@ export default function Contact() {
 	const submitEmail = async (e) => {
 		e.preventDefault();
 		console.log({ mailerState });
-		const response = await fetch("https://sheltered-stream-85543.herokuapp.com/https://sqdpt.herokuapp.com/send", {
-			method: "POST",
+		const response = await fetch("/send", {
+			method: "PUT",
 			headers: {
 				"Content-type": "application/json",
 			},
@@ -110,7 +110,11 @@ export default function Contact() {
             <button
               className="submitBtn"
               type="submit"
-              onClick={submitEmail}
+              onClick={(e) => {
+                mailerState.email.match(regex)
+                  ? submitEmail(e)
+                  : console.log("email not valid");
+              }}
             >
               Send
             </button>
