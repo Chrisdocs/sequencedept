@@ -21,7 +21,7 @@ export default function Contact() {
 	const submitEmail = async (e) => {
 		e.preventDefault();
 		console.log({ mailerState });
-		const response = await fetch("https://mail.google.com/", {
+		const response = await fetch("https://sheltered-stream-85543.herokuapp.com/https://sqdpt.herokuapp.com/send", {
 			method: "POST",
 			headers: {
 				"Content-type": "application/json",
