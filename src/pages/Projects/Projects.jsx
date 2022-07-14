@@ -5,7 +5,7 @@ import Cards from '../../components/Card/Card';
 function Projects() {
 
     return (
-        <div>
+        <div className='projectContainer'>
           <Cards></Cards>
         </div>
     );

@@ -1,87 +1,29 @@
-	.contactTitle {
-		font-size: xxx-large;
-		font-weight: bold;
+.contactContainer{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: antiquewhite;
+	padding: 20px;
+}
 
-		text-align: center;
-	}
-	
-	.formContainer {
-		display: flex;
-		justify-content: center;
-		margin-bottom: 10vh;
-	}
+.contactBtn{
+	background-color: black;
+	color: white;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	font-size: larger;
+	font-family: 'Inter', sans-serif;
+	margin: 25px;
+}
 
-	.formInput {
-		margin-bottom: 5%;
-		width: 50vw;
-		height: 4vh;
-		border: none;
+.contactBtn:hover{
+	background-color: white;
+	color: black;
+}
 
-	}
-
-	.formMessage {
-		width: 50vw;
-		height: 30vh;
-		border: none;
-
-	}
-
-	.charCount {
-
-		font-size: small;
-		margin: 0;
-	}
-
-	.formInput:focus, .formMessage:focus {
-		outline: none !important;
-		border: 2px solid black;
-		box-shadow: 0 0 5px black;
-	}
-
-	.submitDiv {
-		overflow: visible;
-    display: flex;
-    justify-content: center;
-
-	}
-	.submitBtn {
-    background-color: #c0915f;
-    border: none;
-    text-decoration: none;
-    padding: 40px 25px 40px 25px;
-    cursor: pointer;
-    font-family: 'Pacifico';
-    font-size: large;
-    background-image: url('../../assets/images/stamp.webp');
-    background-size: contain;
-	}
-
-	.submitBtn:hover {
-		background-color: #e4a54c;
-    background-image: url('../../assets/images/stampb.webp');
-    background-size: contain;
-	}
-
-	button{
-		font-weight: bold;
-	}
-
-	.submitBtn:hover {
-	}
-	
-	@media screen and (max-width: 450px) {
-
-		.contactTitle{
-			margin-top: 0;
-		}
-		.formInput{
-			width: 75vw;
-		}
-		.formMessage {
-			width: 75vw;
-		}
-		button{
-			font-size: large;
-		}
-		
-	}
+.contactTitle{
+	font-size: xx-large;
+	font-family: 'Inter', sans-serif;
+	margin: 25px;
+}
