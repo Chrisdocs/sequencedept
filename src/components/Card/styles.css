@@ -8,6 +8,7 @@
 
 .video-wrapper{
 	height: 50vh;
+	justify-content: center;
 }
 
 .video-title{
