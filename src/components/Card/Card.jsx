@@ -6,7 +6,7 @@ import "./styles.css";
 
 function Cards() {
   return (
-    <Carousel showThumbs={false}>
+    <Carousel className="carousel-container" showThumbs={false}>
 		<div className="card-wrapper">
 			<div className="video-wrapper">
 				<ReactPlayer
@@ -27,7 +27,6 @@ function Cards() {
 			</div>
 		</div>
     </Carousel>
-
   );
 }
 
