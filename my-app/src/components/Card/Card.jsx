@@ -13,7 +13,7 @@ function Cards() {
 					className="react-player"
 					url="https://vimeo.com/226091135"
 					controls={true}
-					// width="100%"
+					width="100%"
 					height="100%"
 				/>
 			</div>
