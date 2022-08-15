@@ -19,10 +19,10 @@ function Cards() {
 			</div>
 			<div className="text-wrapper">
 				<p className="video-title">
-					Title
+					"Chips"
 				</p>
 				<p className="video-info">
-					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, sapiente ullam qui assumenda quibusdam tempore consequatur aliquid dolorum fugit optio nesciunt consequuntur maiores illo, explicabo, quas quis pariatur enim corporis.
+					Three critters fail miserably at eating a bag of chips...
 				</p>
 			</div>
 		</div>
