@@ -95,7 +95,7 @@ export default function App() {
           </section>
 
           <section className="section-container" id="project-page">
-            <Parallax strength={scrollStr}>
+            <Parallax bgImage={logs} strength={scrollStr}>
               <div className="div2">
                 <Projects></Projects>
               </div>
