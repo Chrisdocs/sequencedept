@@ -13,6 +13,10 @@ body {
   transform: translate(-50%, -50%);
 }
 
+.logo {
+	max-width: 30vw;
+}
+
 .parallax-section {
   position: relative;
   width: 100%;
@@ -47,7 +51,7 @@ body {
 }
 .fw-main-row-abt {
   background-attachment: scroll;
-  background-image: url(./assets/images/portland.webp);
+  background-image: url(./assets/images/Portland.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -101,6 +105,9 @@ body {
 	.image1, #container-div, #project-page{
 		height: 1200px;
 	}
+	.logo {
+		max-width: 60vw;
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -116,6 +123,9 @@ body {
   .section-container {
     margin: auto;
   }
+	.logo {
+		max-width: 60vw;
+	}
 }
 
 @media screen and (max-width: 300px){

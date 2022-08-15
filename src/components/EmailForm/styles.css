@@ -2,13 +2,13 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: antiquewhite;
+	background-color: transparent;
 	padding: 20px;
 }
 
 .contactBtn{
-	background-color: black;
-	color: white;
+	background-color: transparent;
+	color: transparent;
 	padding: 10px;
 	border: none;
 	border-radius: 5px;
@@ -18,12 +18,22 @@
 }
 
 .contactBtn:hover{
-	background-color: white;
-	color: black;
+	background-color: transparent;
+	color: transparent;
 }
 
 .contactTitle{
 	font-size: xx-large;
 	font-family: 'Inter', sans-serif;
 	margin: 25px;
+}
+
+.emailCard{
+	max-width: 50vw;
+}
+
+@media screen and (max-width: 450px) {
+		.emailCard {
+				max-width: 90vw;
+		}
 }

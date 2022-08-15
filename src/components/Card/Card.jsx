@@ -22,7 +22,7 @@ function Cards() {
 					Title
 				</p>
 				<p className="video-info">
-					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, sapiente ullam qui assumenda quibusdam tempore consequatur aliquid dolorum fugit optio nesciunt consequuntur maiores illo, explicabo, quas quis pariatur enim corporis?
+					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, sapiente ullam qui assumenda quibusdam tempore consequatur aliquid dolorum fugit optio nesciunt consequuntur maiores illo, explicabo, quas quis pariatur enim corporis.
 				</p>
 			</div>
 		</div>

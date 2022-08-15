@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&display=swap');
 
 .card-wrapper{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: black;
+}
+
+.carousel-container {
+	background-color: black;
 }
 
 .video-wrapper{

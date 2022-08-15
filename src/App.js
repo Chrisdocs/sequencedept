@@ -8,10 +8,9 @@ import Contact from "./pages/Contact/Contact";
 import Navigation from "./components/Navigation/Nav";
 import Projects from "./pages/Projects/Projects";
 import forest from "./assets/images/ForestBG1.webp";
-import sqdptLogo from "./assets/images/logo.webp";
+import sqdptLogo from "./assets/images/sqdptlogo.png";
 import savMap from "./assets/images/savanahmap.webp";
-import aboutBg from "./assets/images/portland.webp";
-import logs from "./assets/images/longs.webp";
+import aboutBg from "./assets/images/Portland.png";
 
 export default function App() {
   const scrollStr = 500;
@@ -95,11 +94,9 @@ export default function App() {
           </section>
 
           <section className="section-container" id="project-page">
-            <Parallax bgImage={logs} strength={scrollStr}>
               <div className="div2">
                 <Projects></Projects>
               </div>
-            </Parallax>
           </section>
 
           <section className="section-container" id="contact-page">
