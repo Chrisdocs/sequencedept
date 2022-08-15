@@ -20,7 +20,7 @@ function Footer() {
                 </div>
                 <div id="footer-title">
                     <h3>Sequence Department</h3>
-                    <p>SQ-DPT is a production and creative company based out of Savannah, Georgia.</p>
+                    <p>The Sequence Department is a media production company based out of Savannah, Georgia.</p>
                 </div>
                 <div id="footer-nav">
                         <a className='footer-text' href={"#header"}>SQ-DPT</a>
